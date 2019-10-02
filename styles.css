@@ -1,0 +1,717 @@
+
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+ }
+
+body {
+  background: white;
+  margin: 0 auto;
+ overflow-x: hidden;
+
+}
+
+/* color change */
+/* https://codepen.io/raaasin/pen/quvHr */
+    .color {
+
+      -webkit-animation:colorchange 20s infinite alternate;
+
+
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        color: red;
+      }
+      10% {
+        color: #8e44ad;
+      }
+
+      20% {
+        color: #1abc9c;
+      }
+
+      30% {
+        color: #d35400;
+      }
+
+      40% {
+        color: blue;
+      }
+
+      50% {
+        color: #34495e;  }
+
+      60% {
+        color: blue;}
+
+      70% {
+        color: #2980b9;
+      }
+      80% {
+        color: #f1c40f;
+      }
+
+      90% {
+        color: #2980b9;
+      }
+
+      100% {
+        color: pink;
+      }
+    }
+
+    .prevnext {
+
+      -webkit-animation:colorchange 20s infinite alternate;
+
+
+    }
+    @-webkit-keyframes colorchange {
+
+        0% {
+          color: red;
+        }
+        10% {
+          color: #8e44ad;
+        }
+
+        20% {
+          color: #1abc9c;
+        }
+
+        30% {
+          color: #d35400;
+        }
+
+        40% {
+          color: blue;
+        }
+
+        50% {
+          color: #34495e;  }
+
+        60% {
+          color: blue;}
+
+        70% {
+          color: #2980b9;
+        }
+        80% {
+          color: #f1c40f;
+        }
+
+        90% {
+          color: #2980b9;
+        }
+
+        100% {
+          color: pink;
+        }
+      }
+
+
+.yellow {
+  background-color: #fff780;
+}
+.blue {
+  background-color: #fff780;
+}
+
+/* .rotate {
+  animation: rotation 10s infinite linear;
+  margin: 35%;
+  max-width: 50%;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+} */
+.heroimg {
+  /* background-image: url("img/roylichtenstein.jpg"); */
+  background-position: center;
+  width: 30vw;
+  /* float: center; */
+  /* opacity: .2; */
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-300%);
+
+  }
+  150% {
+    transform: translateY(0%);
+
+  }
+}
+@keyframes paint {
+  0% {
+    /* transform: translateY(-800%); */
+    opacity: 0;
+    background-color: blue;
+padding-top: 0em;
+padding-bottom: 0em;
+width:0;
+height:0em;
+  }
+  20% {
+      opacity: 0;
+  }
+  150% {
+    transform: translateY(0%);
+    padding-bottom:4em;
+    background-color: red;
+    opacity: 1;
+  }
+  200% {
+    opacity: 0;
+  }
+}
+.red {
+  background-color: red;
+  padding: 2em;
+  margin: 5em;
+  transition: background-color .3s linear;
+}
+.img {
+  animation: 1s ease-out .4s 1 slideInFromLeft;
+  padding: 4.5em;
+  margin: 5.5em;
+}
+.ink {
+  animation: 1.5s ease-out .4s 1 paint;
+  width:5em;
+  height:6em;
+  background-color: red;
+  /* background-color: colorchange 20s; */
+  padding:10em 6em 10em 7em;
+  margin: 3em .5em -11em 7.5em;
+}
+
+.whatis {
+  width: 50%;
+}
+
+.screenrotate {
+  animation: rotation 10s infinite linear;
+  margin: 35%;
+  max-width: 50%;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.content {
+  margin-bottom:10em;
+}
+
+.still{
+  position: fixed;
+  color: #878787;
+}
+.name{
+  margin:1em;
+}
+
+.left {
+align-self: flex-start;
+transform: rotate(-90deg);
+position:fixed;
+
+}
+.right {
+  transform: rotate(90deg);
+  float:right;
+  align-content: right;
+  align-self: flex-end;
+}
+.guide{
+  position: fixed;
+margin-top: 40%;
+  font-size: .75em;
+}
+.top {
+  z-index: 1;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+h2.subtitle.top {
+  z-index: 2;
+  position: absolute;
+  padding-top: 20em;
+}
+
+img.heroimg{
+  max-width: 15em;
+}
+/* .title {
+color:white;
+}
+.subtitle {
+color:white;
+} */
+/* scroll */
+ a.next {
+ text-decoration: none;
+ position: absolute;
+ color: red;
+ float: right;
+ /* background-color: red; */
+ left:5em;
+ /* padding-right: 50%; */
+ padding-right:100em;
+ margin-left: 50%;
+ padding-bottom: 100%;
+ z-index: 2;
+ opacity: .2;
+
+}
+a.prev {
+text-decoration: none;
+position: absolute;
+color: blue;
+float: left;
+/* background-color: blue; */
+right:5em;
+/* padding-left: 50%; */
+padding-left:100em;
+margin-right: 50%;
+padding-bottom: 100%;
+z-index: 2;
+opacity: .2;
+
+}
+a.prev:hover {
+
+}
+
+/* quiz next option */
+.lower {
+  z-index: 1;
+  margin-left: 30em;
+}
+.quiz {
+  z-index: 4;
+  position:relative;
+}
+#begin {
+ margin-top: 0%;
+ padding-bottom: 0;
+
+ /* color:red; */
+}
+#start {
+ margin-top: 50%;
+ padding-bottom: 25%;
+
+ /* color:red; */
+}
+#materials {
+ margin-top: 50%;
+ padding-bottom: 25%;
+ /* color:red; */
+}
+#howto {
+ margin-top: 50%;
+ padding-bottom: 25%;
+ /* color:red; */
+}
+
+* {
+  box-sizing: border-box;
+}
+.slider {
+    width: 30%;
+    margin: 100px auto;
+    z-index:2;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+
+}
+.content ul {
+  margin-left: 0em;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.material {
+  text-align: center;
+  font-size: .5em;
+
+}
+.subtitle {
+  margin-top: 2em;
+  padding-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.slider img {
+max-width: 100%;
+max-height: 10vh;
+margin: 1em 0em 1em 0em;
+/* width: auto; */
+position: relative;
+}
+.slider {
+  text-align: : center;
+}
+
+
+/* dark section */
+.dark {
+  background-color: #1a1a1a;
+}
+
+/* updown animate */
+.updown {
+        -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+        margin: 25%;
+    }
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-30px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-30px); }
+    }
+
+
+
+
+
+
+.col-md-1 {
+  text-align: center;
+  justify-content: center;
+
+
+}
+
+
+
+.spin {
+  opacity:1;
+
+}
+
+/* media queries */
+
+@media (max-width: 376px) {
+
+  .spin {
+    opacity: 1;
+    display: block;
+
+  }
+
+  .column .painter {
+    display: none;
+  }
+  .column .big {
+    max-width:90%;
+  }
+
+
+  .top h1{
+    font-size: 3.5em;
+    /* margin-right:.25em;
+    margin-left:.25em; */
+    padding-top:2em;
+/* padding:1.5em .5em 0em .5em; */
+    /* width: 4em; */
+  }
+
+  .top h2 {
+    /* margin-right:.5em;
+    margin-left:.5em */
+    padding-top:0em;
+    font-size: 4em;
+
+
+  }
+  .color h2 {
+    /* margin-right:.5em;
+    margin-left:.5em */
+    padding-top:2em;
+    /* padding-left: 2em; */
+  }
+  img.heroimg{
+    max-width: 20em;
+  }
+  .ink {
+
+    background-color: red;
+    padding:0em 3em 5em 3em;
+    margin: 5em .5em -11em 7.5em;
+  }
+  /* .whatis {
+max-width: 2em;
+  margin: 0em;
+  } */
+
+
+  @keyframes paint {
+    0% {
+      /* transform: translateY(-800%); */
+  padding-top: 0em;
+  padding-bottom: 0em;
+  width:0;
+  height:0;
+
+    }
+    150% {
+      transform: translateY(0%);
+      padding-bottom:30em;
+      height:30em;
+
+    }
+  }
+
+  .slick-dots {
+    opacity: 0;
+  }
+  a.next,a.prev {
+    padding-bottom: 200%;
+
+  }
+  a.next {
+    margin-left: 15%;
+    margin-right: -4em;
+}
+.column {
+  flex-direction: row;
+  display: inline-block;
+}
+
+}
+
+@media (max-width: 576px) {
+
+  .columns.is-multiline {
+    display: inline-flex;
+  }
+
+  .rotate {
+    animation: rotation 10s infinite linear;
+    margin: 35%;
+    max-width: 50%;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  a.next {
+  text-decoration: none;
+  position: absolute;
+  color: red;
+  float: right;
+  /* background-color: red; */
+  /* left:10em; */
+  padding-right: 50%;
+  margin-left: 30%;
+
+}
+  .title {
+    font-size: 2em;
+    margin-right:50%;
+    width: 4em;
+  }
+  img.heroimg{
+    max-width: 20em;
+  }
+  .ink {
+opacity: 0;
+    /* background-color: red;
+    padding:18%;
+    margin-left:40%; */
+    /* padding:0em 3em 5em 3em; */
+    /* margin: 5em .5em -11em 7.5em; */
+  }
+
+.guide {
+  margin-top: 60%;
+}
+.column {
+  flex-direction: row;
+  display: inline-block;
+}
+
+}
+
+@media (max-width: 768px) {
+
+  .painter {
+    display: none;
+  }
+  .column {
+    flex-direction: row;
+    display: inline-block;
+  }
+  a.nex {
+    padding-bottom: 450%;
+  }
+  .slick-dots {
+    opacity: 0;
+  }
+
+.subtitle {
+  font-size: .75em;
+  width: 80%;
+}
+.title {
+  font-size: 4em;
+  margin-right:50%;
+
+}
+
+
+/* what is screenprinting */
+/* .rotate {
+  animation: rotation 10s infinite linear;
+  margin: 5%;
+  max-width: 20%;
+} */
+
+  .center {
+
+    text-align: center;
+
+
+top:0%;
+transform: translateY(0%);
+margin: 30%;
+max-width: 40%;
+
+
+  }
+  /* .whatis {
+padding:-10em;
+
+  } */
+
+
+  .ink {
+opacity: 0;
+    /*
+
+
+    : red;
+    padding:18%;
+    margin-left:40%; */
+    /* padding:0em 3em 5em 3em; */
+    /* margin: 5em .5em -11em 7.5em; */
+  }
+
+
+  /* .col-md-1 h1 {
+    padding-top: 50%;
+  } */
+}
+@media (min-width: 1300px) {
+/* remove squeegie from big screen */
+  .spin {
+    display: none;
+
+  }
+  .guide {
+    margin-top: 20%;
+  }
+/* red squeegee */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-200%);
+
+  }
+  150% {
+    transform: translateY(-100%);
+
+  }
+}
+.img {
+  animation: 1s ease-out .4s 1 slideInFromLeft;
+  padding: 2em;
+  margin: 10%;
+  margin-left: 10%;
+  margin-bottom: 30%;
+
+}
+.ink {
+
+  opacity: 1;
+margin-left:20%;
+padding-bottom:-1em;
+}
+.img .heroimg {
+  margin-top:3em;
+}
+/*
+  .rotate {
+    animation: rotation 10s infinite linear;
+    margin: 35%;
+    max-width: 50%;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  } */
+
+/* .updown{
+  margin: 10%;
+  max-width: 10em;
+
+} */
+/* .rotate{
+  margin: 10%;
+  max-width: 10em;
+
+} */
+}
